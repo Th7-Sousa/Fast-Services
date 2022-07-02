@@ -9,10 +9,12 @@ export const HomeStyles = Styled.div`
     flex-direction: column;
     align-items: stretch;
 }
+header{
+    background-color: #266073;
+}
 body {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 .secaoContrate {  
@@ -20,7 +22,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
 }
 
 .textos_secao1 {
@@ -45,15 +47,47 @@ body {
 
 .secaoImagens {
     max-height: max-content;
-    background: trasparent;
+    background-color: #266073;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 4rem;
+    justify-content: center;
+    gap: 5rem;
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 3.2rem 0;
 }
-#img {
-    height: 25rem;
+
+#container-img {
+    max-width: max-content;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+#imgServico {
+    width: 14rem;
+    height: 14rem;
+    background-color: #FFB30D;
+    border: 0.1rem solid #001542;
+    opacity: 85%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+#button-img{
+    color:  #ffffff;
+    background-color: #001542;
+    width: 14rem;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.3rem 0;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#button-img:hover {
+    color: #001542; 
+    background-color: #ffffff;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.04);
 }
 `;
