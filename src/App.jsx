@@ -1,13 +1,13 @@
 import './index.css'
-import Home from '../src/paginasPrincipais/home/index';
+import Rotas from '../src/Routers';
+import Navbar from "../src/components/logoMenu/index";
 
 function App() {
 
   return (
     <div>
-
-      <Home /> 
-                                    
+      <Navbar />
+      <Rotas />                                  
     </div>
   )
 }
